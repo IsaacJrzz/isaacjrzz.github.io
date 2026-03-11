@@ -25,13 +25,3 @@ El portafolio se divide en las siguientes secciones integradas en una única vis
 * **Projects:** Galería de trabajos destacados con enlaces a demos y repositorios.
 * **Skills:** Mis herramientas principales (Frontend, Backend, Tools).
 * **Contact:** Formulario y enlaces directos a mis redes profesionales.
-
----
-
-## 🛠️ Instalación y Configuración
-
-Si deseas ejecutar este proyecto localmente, sigue estos pasos:
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/TU_USUARIO/mi-portfolio-react.git](https://github.com/TU_USUARIO/mi-portfolio-react.git)
