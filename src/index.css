@@ -1,126 +1,46 @@
-/* --- IDENTIDAD VISUAL --- */
+/* --- VARIABLES --- */
 :root {
   --fuchsia: #FF0059;
   --black: #000000;
-  --carbon: #111111;
-  --white: #ffffff;
+  --white: #FFFFFF;
 }
 
-/* --- BASE: IMPORTANTE PARA EL SCROLL --- */
-html, body {
+/* --- RESET GLOBAL --- */
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-height: 100%;
-  /* Permitimos scroll vertical, bloqueamos el horizontal */
-  overflow-x: hidden; 
-  overflow-y: auto; 
-  background-color: var(--black);
-  color: var(--white);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-* {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important; /* El !important fuerza la fuente */
 }
 
-/* El contenedor de las secciones de abajo */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 10%;
+html, body {
+  background-color: var(--black) !important;
+  color: var(--white);
   width: 100%;
+  overflow-x: hidden;
 }
 
-/* --- COMPONENTES --- */
-h2 {
-  color: var(--fuchsia);
-  border-bottom: 2px solid var(--fuchsia);
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+/* --- SELECCIÓN DE TEXTO (Subrayado Rosa) --- */
+::selection {
+  background-color: var(--fuchsia);
+  color: var(--white);
 }
 
-.card {
-  background-color: var(--carbon);
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid #222;
-  border-left: 5px solid var(--fuchsia);
-  transition: all 0.3s ease;
-  margin-bottom: 30px;
+/* --- BARRA LATERAL (Scrollbar Rosa) --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fuchsia);
+  border-radius: 10px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  border-color: var(--fuchsia);
-  box-shadow: 0 10px 30px rgba(255, 0, 89, 0.1);
-}
-
-/* Scrollbar minimalista fucsia */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #000; }
-::-webkit-scrollbar-thumb { background: var(--fuchsia); border-radius: 10px; }
-
-/* --- Efectos para los enlaces del Navbar --- */
-.nav-link-custom {
-  position: relative;
-}
-
-.nav-link-custom:hover {
-  color: #FF0059 !important; /* Forzamos el fucsia sobre el blanco */
-  text-shadow: 0 0 10px rgba(255, 0, 89, 0.6), 0 0 20px rgba(255, 0, 89, 0.4);
-  transform: translateY(-2px); /* Un pequeño salto sutil */
-}
-
-/* Opcional: una barrita debajo que crece al pasar el ratón */
-/* --- Efectos avanzados para los enlaces del Navbar (.nav-link-custom) --- */
-.nav-link-custom {
-  position: relative;
-  transition: all 0.3s ease;
-  z-index: 1; /* Para asegurarnos de que el pseudo-elemento no tape el texto */
-}
-
-/* El estado base de los enlaces cuando el ratón NO está encima */
-.nav-link-custom:hover {
-  color: #FF0059 !important; /* Forzamos el fucsia sobre el blanco base */
-  text-shadow: 0 0 10px rgba(255, 0, 89, 0.6), 0 0 20px rgba(255, 0, 89, 0.4);
-  transform: translateY(-2px); /* Un pequeño salto sutil hacia arriba */
-}
-
-/* * Pseudo-elemento ::after (La barra de subrayado)
- * Se posiciona absolutamente respecto al enlace (.nav-link-custom)
- * Inicialmente es una línea invisible (width: 0) centrada debajo del texto
- * Al hacer hover, se expande para ocupar todo el ancho del enlace
- */
-.nav-link-custom::after {
-  content: '';
-  position: absolute;
-  
-  /* Posición base de la barra (abajo y centrada) */
-  bottom: -5px; /* Separación del texto */
-  left: 50%;   /* Empieza justo en el medio horizontal */
-  
-  /* Dimensiones base (sin ancho) */
-  width: 0; 
-  height: 2px; /* Grosor de la línea */
-  
-  /* Color y brillo neón de la barra */
-  background-color: #FF0059;
-  box-shadow: 0 0 8px #FF0059, 0 0 15px rgba(255, 0, 89, 0.5);
-  
-  /* Animación: Transición suave de la posición y el ancho */
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-/* * Estado Hover: Cuando el ratón pasa por encima
- * La barra se expande ocupando todo el ancho
- */
-.nav-link-custom:hover::after {
-  width: 100%; /* Ocupa el 100% del enlace */
-  left: 0;     /* Mueve el inicio a la izquierda para cubrir todo */
+/* --- UTILIDADES --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

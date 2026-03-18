@@ -12,7 +12,8 @@ export default function Footer() {
       <div style={styles.container}>
         <div style={styles.infoSection}>
           <h2 style={styles.logo}>ISAAC <span style={styles.highlight}>ALONSO</span></h2>
-          <p style={styles.text}>Construyendo experiencias multiplataforma de alto rendimiento.</p>
+          <p style={styles.text}>"Ojalá que empezara de cero, y poderle decir que he pasado la vida sin saber que la espero"</p>
+          <p style={styles.text}>Roberto Iniesta</p>
         </div>
 
         <div style={styles.contactSection}>
@@ -30,7 +31,7 @@ export default function Footer() {
 
       <div style={styles.bottomBar}>
         <p style={styles.copyright}>© {currentYear} — DISEÑADO POR ISAAC ALONSO</p>
-        <p style={styles.copyright}>SMR & DESARROLLO MULTIPLATAFORMA</p>
+        <p style={styles.copyright}>DESARROLLO DE APLICACIONES MULTIPLATAFORMA & SISTEMAS MICROINFORMÁTICOS Y REDES</p>
       </div>
 
       <style>{`
