@@ -54,6 +54,7 @@ export default function Navbar() {
           {/* Espaciado aumentado a 60px para mayor claridad visual */}
           <div style={{ display: 'flex', gap: isMobile ? '25px' : '60px' }}>
             <a href="#inicio" className="nav-link-custom" style={styles.link}>Inicio</a>
+            <a href="#tecnologias" className="nav-link-custom" style={styles.link}s>Skills</a>
             <a href="#proyectos" className="nav-link-custom" style={styles.link}>Proyectos</a>
             <a href="#contacto" className="nav-link-custom" style={styles.link}>Contacto</a>
           </div>

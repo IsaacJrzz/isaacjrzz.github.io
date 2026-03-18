@@ -13,9 +13,9 @@ export default function Hero() {
     let animationFrameId;
 
     const config = {
-      particleCount: 65,     // Cantidad equilibrada: ni vacío ni saturado
-      connectDistance: 120, 
-      speed: 0.25,           
+      particleCount: 70,
+      connectDistance: 150, 
+      speed: 0.2,           
     };
 
     let particles = [];
@@ -36,7 +36,7 @@ export default function Hero() {
         this.y = Math.random() * canvas.height;
         this.vx = (Math.random() - 0.5) * config.speed;
         this.vy = (Math.random() - 0.5) * config.speed;
-        this.radius = Math.random() * 1.5 + 0.5; // Tamaños variados para profundidad
+        this.radius = Math.random() * 1.5 + 0.8; // Tamaños variados para profundidad
       }
 
       draw() {
@@ -163,7 +163,7 @@ export default function Hero() {
 }
 
 const styles = {
-  hero: { height: '100vh', width: '100%', display: 'flex', backgroundColor: '#000', overflow: 'hidden', position: 'relative' },
+  hero: {marginBottom: '5%', height: '100vh', width: '100%', display: 'flex', backgroundColor: '#000', overflow: 'hidden', position: 'relative' },
   leftColumn: { flex: '1 1 50%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 5% 0 10%', zIndex: 10, background: 'linear-gradient(90deg, #000 85%, rgba(0,0,0,0) 100%)' },
   textContainer: { maxWidth: '550px', textAlign: 'left' },
   legend: { color: 'rgb(206, 206, 206)', fontSize: '0.8rem', letterSpacing: '5px', fontWeight: '700', marginBottom: '10px', display: 'block' },
