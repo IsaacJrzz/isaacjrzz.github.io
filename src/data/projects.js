@@ -23,7 +23,7 @@ export const projectsData = [
     "number": "03",
     "title": "ALPHA",
     "type": "SIMULACIÓN • DEVOPS • JS",
-    "images": ["alpha.png"],
+    "images": ["sm+.png"],
     "link": "https://github.com/IsaacJrzz/Plat-Alpha",
     "external": true,
     "descriptionLeft": "Motor de simulación incremental enfocado en el ciclo de vida del software. El sistema permite gestionar desde la generación manual de código hasta el despliegue de infraestructuras críticas autónomas.",
