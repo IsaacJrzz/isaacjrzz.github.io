@@ -20,7 +20,7 @@ export const projectsData = [
     descriptionRight: "Actualmente en fase de desarrollo, el sistema integra un módulo de Salud Mental y arquitectura UML avanzada. El proyecto abarca desde el análisis legal hasta el prototipado de alta fidelidad validado."
 },
 {
-    "number": "01",
+    "number": "03",
     "title": "ALPHA",
     "type": "SIMULACIÓN • DEVOPS • JS",
     "images": ["alpha.png"],
