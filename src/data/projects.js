@@ -29,5 +29,15 @@ export const projectsData = [
     "descriptionLeft": "Motor de simulación incremental enfocado en el ciclo de vida del software. El sistema permite gestionar desde la generación manual de código hasta el despliegue de infraestructuras críticas autónomas.",
     "descriptionRight": "Desarrollado con un motor de eventos asíncrono, incluye mecánicas de prestigio (Deploy), gestión de errores en tiempo real (Bugs) y un sistema visual dinámico basado en sintaxis Monokai con control de densidad."
 }, 
+{
+    "number": "04",
+    "title": "CATER-KOM",
+    "type": "UI/UX • BRANDING • REACT",
+    "images": ["sm+.png"],
+    "link": "https://isaacjrzz.github.io/Cater-Kom-Internacional-SL/",
+    "external": true,
+    "descriptionLeft": "Plataforma corporativa de alta gama diseñada para Cater-Kom Internacional. El proyecto se centra en una experiencia de usuario inmersiva con una estética minimalista y brutalista, utilizando tipografías de gran escala para reforzar la identidad de marca.",
+    "descriptionRight": "Desarrollado con React y CSS avanzado, el sitio implementa transiciones fluidas de profundidad, un sistema de navegación optimizado para conversión y un diseño adaptativo que mantiene el impacto visual en resoluciones ultra-anchas y dispositivos móviles."
+}, 
   // ... otros proyectos
 ];
