@@ -14,7 +14,7 @@ export const projectsData = [
     title: "SM+",
     type: "TFG • EN DESARROLLO • UX/UI", // Añadido TFG y estado
     images: ["sm+.png"],
-    link: "#",
+    link: "https://isaacjrzz.github.io/SMPlus/",
     external: false,
     descriptionLeft: "Proyecto de Fin de Grado (TFG) enfocado en solucionar la fragmentación digital de SaludMadrid. Una propuesta que unifica Cita Sanitaria y Tarjeta Virtual en una única interfaz multiplataforma optimizada.",
     descriptionRight: "Actualmente en fase de desarrollo, el sistema integra un módulo de Salud Mental y arquitectura UML avanzada. El proyecto abarca desde el análisis legal hasta el prototipado de alta fidelidad validado."
